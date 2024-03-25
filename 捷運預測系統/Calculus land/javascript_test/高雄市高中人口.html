@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css"> <!--宣告 CSS-->
+    <link rel="stylesheet" href ="./design.css/style.css">
+</head>
+
+<body>
+  <div class = "container-intro text-center">
+    <div class = "row">
+      <div class = "col-sm-3">
+        <div class = "col-sm-1">
+        <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
+            <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
+            <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
+          </svg>
+        </button>
+      </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">功能欄</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              目前封測中...
+            </div>
+            <p></p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  各區人口資料
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="./高雄各區人口折線圖.html">高雄各區人口折線圖</a></li>
+                  <li><a class="dropdown-item" href="./高雄各區人口色層圖.html">高雄各區人口色層圖</a></li>
+                  <li><a class="dropdown-item" href="./高雄各區人口長條圖.html">高雄各區人口長條圖</a></li>
+                </ul>
+              </div>
+              <p>--------------------------------------------</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  觀光景點
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="./高雄各景點人次折線圖.html">高雄各區觀光景點人流折線圖</a></li>
+                  <li><a class="dropdown-item" href="./高雄各景點人次長條圖.html">高雄各區觀光景點人流色長條圖</a></li>
+                </ul>
+              </div>
+              <p>--------------------------------------------</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  高雄各大學、各高中職人數
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="./高雄市大學人口.html">高雄各大學人數長條圖</a></li>
+                  <li><a class="dropdown-item" href="./高雄市高中人口.html">高雄各高中職人數長條圖</a></li>
+                </ul>
+              </div>
+              <p>--------------------------------------------</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  各捷運出口人流
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="./高雄捷運人數資料長條圖.html">高雄捷運出口人流長條圖</a></li>
+                </ul>
+              </div>
+              <p>--------------------------------------------</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  數據分析
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="./捷運路線圖.html">學校、觀光景點路線</a></li>
+                  <li><a class="dropdown-item" href="./選擇捷運.html">新捷運區域分析</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>        
+      </div>
+      <div class="col-sm-6">
+        <h1 align="center" valign="center">高雄市各區高中生人數(直方圖)</h1>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            請選擇區域
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#全部">全部</a></li>
+            <li><a class="dropdown-item" href="#三民區">三民區</a></li>
+            <li><a class="dropdown-item" href="#大寮區">大寮區</a></li>
+            <li><a class="dropdown-item" href="#大樹區">大樹區</a></li>
+            <li><a class="dropdown-item" href="#小港區">小港區</a></li>
+            <li><a class="dropdown-item" href="#仁武區">仁武區</a></li>
+            <li><a class="dropdown-item" href="#六龜區">六龜區</a></li>
+            <li><a class="dropdown-item" href="#左營區">左營區</a></li>
+            <li><a class="dropdown-item" href="#林園區">林園區</a></li>
+            <li><a class="dropdown-item" href="#前金區">前金區</a></li>
+            <li><a class="dropdown-item" href="#前鎮區">前鎮區</a></li>
+            <li><a class="dropdown-item" href="#苓雅區">苓雅區</a></li>
+            <li><a class="dropdown-item" href="#茄萣區">茄萣區</a></li>
+            <li><a class="dropdown-item" href="#鳥松區">鳥松區</a></li>
+            <li><a class="dropdown-item" href="#新興區">新興區</a></li>
+            <li><a class="dropdown-item" href="#楠梓區">楠梓區</a></li>
+            <li><a class="dropdown-item" href="#路竹區">路竹區</a></li>
+            <li><a class="dropdown-item" href="#鼓山區">鼓山區</a></li>
+            <li><a class="dropdown-item" href="#鳳山區">鳳山區</a></li>
+            <li><a class="dropdown-item" href="#橋頭區">橋頭區</a></li>
+          </ul>
+        </div>
+        <div id="全部">
+          <canvas id="high_school_all_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_all();</script>
+        </div>
+        <div id="三民區">
+          <canvas id="high_school_三民_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_三民();</script>
+        </div>
+        <div id="大寮區">
+          <canvas id="high_school_大寮_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_大寮();</script>
+        </div>
+        <div id="大樹區">
+          <canvas id="high_school_大樹_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_大樹();</script>
+        </div>
+        <div id="小港區">
+          <canvas id="high_school_小港_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_小港();</script>
+        </div>
+        <div id="仁武區">
+          <canvas id="high_school_仁武_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_仁武();</script>
+        </div>
+        <div id="六龜區">
+          <canvas id="high_school_六龜_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_六龜();</script>
+        </div>
+        <div id="左營區">
+          <canvas id="high_school_左營_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_左營();</script>
+        </div>
+        <div id="林園區">
+          <canvas id="high_school_林園_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_林園();</script>
+        </div>
+        <div id="前金區">
+          <canvas id="high_school_前金_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_前金();</script>
+        </div>
+        <div id="前鎮區">
+          <canvas id="high_school_前鎮_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_前鎮();</script>
+        </div>
+        <div id="美濃區">
+          <canvas id="high_school_美濃_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_美濃();</script>
+        </div>
+        <div id="苓雅區">
+          <canvas id="high_school_苓雅_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_苓雅();</script>
+        </div>
+        <div id="茄萣區">
+          <canvas id="high_school_茄萣_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_茄萣();</script>
+        </div>
+        <div id="鳥松區">
+          <canvas id="high_school_鳥松_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_鳥松();</script>
+        </div>
+        <div id="新興區">
+          <canvas id="high_school_新興_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_新興();</script>
+        </div>
+        <div id="楠梓區">
+          <canvas id="high_school_楠梓_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_楠梓();</script>
+        </div>
+        <div id="路竹區">
+          <canvas id="high_school_路竹_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_路竹();</script>
+        </div>
+        <div id="鼓山區">
+          <canvas id="high_school_鼓山_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_鼓山();</script>
+        </div>
+        <div id="鳳山區">
+          <canvas id="high_school_鳳山_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_鳳山();</script>
+        </div>
+        <div id="橋頭區">
+          <canvas id="high_school_橋頭_canvas"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="./design.js/高雄市高中人口.js"></script>
+          <script>high_school_bar_demo_橋頭();</script>
+        </div>
+
+
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

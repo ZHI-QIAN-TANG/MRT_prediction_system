@@ -1,0 +1,34 @@
+.container-intro{
+    padding: 50px;
+}
+:root {
+    --color-gold: #047fe3;
+}
+body {
+    background-color: #ffffff;
+}
+path {
+    stroke: rgb(7, 162, 252);
+    fill: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+path:hover {
+    fill: var(--color-gold);
+    transform: translate(-5px, -5px);
+}
+
+.title_area{
+    position: absolute;
+    right: 100px;
+    top: 500px;
+    border-bottom: solid 1px;
+}
+hr{
+    width: 100px;
+    border-bottom: solid 5px black;
+}
+#map-canvas {
+    height: 550px;
+    width: 90%;
+}
